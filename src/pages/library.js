@@ -9,6 +9,7 @@ const Library = () => {
     <div>
       <Navbar />
       
+      {/* TODO: insert generic container with content here*/}
       <h1>Welcome to the library page!</h1>
       <p>This is our library page</p>
 

@@ -7,7 +7,8 @@ const About = () => {
 
     <div>
       <Navbar />
-      
+
+      {/* TODO: insert generic container with content here*/}
       <h1>Welcome to the about page!</h1>
       <p>This is our about page</p>
 

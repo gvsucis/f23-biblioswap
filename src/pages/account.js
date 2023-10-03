@@ -9,6 +9,7 @@ const Account = () => {
     <div>
       <Navbar />
       
+      {/* TODO: insert generic container with content here*/}
       <h1>Welcome to the accounts page!</h1>
       <p>This is our accounts page</p>
 
