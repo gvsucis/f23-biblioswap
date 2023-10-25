@@ -11,14 +11,14 @@ const Navbar = () => {
 
 
   return (
-    <nav class="bg-white border-gray-200 dark:bg-gray-900">
+    <nav class="border-gray-200 bg-gray-900">
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="http://localhost:3000/" class="flex items-center">
         <img src="/images/icon-swap.png" className="w-16 h-16" alt="Biblioswap Icon" />
-            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Biblioswap</span>
+            <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">Biblioswap</span>
         </a>
         <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-          <ul class="flex flex-row dark:bg-gray-900 space-x-12 text-lg">
+          <ul class="flex flex-row bg-gray-900 space-x-12 text-lg">
             <li class="pt-2">
             <Link to="/about" className="text-white hover:text-blue-600">
             About
