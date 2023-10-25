@@ -10,7 +10,7 @@ const Modal = ({ show, onClose, children }) => {
     >
       <div 
         onClick={e => e.stopPropagation()}
-        className="bg-gray-900 border  rounded-lg max-w-xl max-h-3/4 p-4 overflow-auto">
+        className="bg-gray-900 rounded-lg max-w-xl max-h-3/4 p-4 overflow-auto">
         {children}
       </div>
     </div>
