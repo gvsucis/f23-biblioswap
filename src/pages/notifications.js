@@ -17,7 +17,7 @@ const Notifications = () => {
       <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-white border border-gray-200 rounded-md p-4 m-4">
           <h2 className="text-2xl font-semibold mb-3">Pending Swaps</h2>
-          <p className="mb-4">Check who is requesting a book of yours.</p>
+          <p className="mb-4">Check who is requesting a book of yours!</p>
           {/* List of pending swaps could go here */}
           <div className="space-y-2">
             {/* Example of a pending swap item */}
