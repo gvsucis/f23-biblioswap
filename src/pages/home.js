@@ -10,17 +10,17 @@ const Home = () => {
       <Navbar />
 
     <div class="container mx-auto px-4 bg-slate-800 pl-20">
-        <div class="flex flex-wrap mx-4">
+        <div class="flex flex-wrap mx-4 mr-2">
             <div class="w-full md:w-1/2 px-4 mt-12">
                 <div class="p-6">
                     <h1 class="text-3xl font-semibold mb-4 text-white">Need a new book?</h1>
-                    <p class="text-lg text-white mb-2">Enjoy the benefits of swapping books with another people! Browse other people's libraries at little to no cost to you!</p>
-                    <Link to="/library" className="bg-blue-400 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4 inline-block no-underline">
+                    <p class="text-lg text-white mb-2">Enjoy the benefits of swapping books with another person to save money! Browse other people's libraries and communicate a swap for little to no cost to you!</p>
+                    <Link to="/library" className="bg-blue-700 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4 inline-block no-underline">
                       Browse Libraries
                     </Link>
                 </div>
             </div>
-            <div class="w-full md:w-1/2 px-4 pl-20 mb-20">
+            <div class="w-full md:w-1/2 px-4 pl-20 mb-20 mt-10">
                 <div class="p-6">
                     <img src="..\images\swap.png" alt="Book Image" class="rounded-lg shadow-xl"></img>
                 </div>
@@ -58,18 +58,18 @@ const Home = () => {
                 <a href="#" class="flex flex-col items-center bg-gray-800 border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-10">
                 <div class="flex flex-col justify-between p-4 leading-normal">
                         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Competitors Cost(s)</h5>
-                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
                     </div>
                 </a>
                 <a href="#" class="flex flex-col items-center bg-gray-800 border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-10">
                   <div class="flex flex-col justify-between p-4 leading-normal">
                           <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Our Costs(s)</h5>
-                          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-                          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-                          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
                   </div>
                 </a>
