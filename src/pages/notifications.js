@@ -6,7 +6,7 @@ import Footer from '../components/footer';
 const Notifications = () => {
   return (
 
-    <div>
+    <div class="bg-gray-800">
       <Navbar />
 
       {/* Header Section */}

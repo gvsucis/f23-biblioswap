@@ -65,7 +65,7 @@ const products = [
 
 const Library = () => {
   return (
-    <div>
+    <div class="bg-slate-800">
       <Navbar />
       
       {/* Header Section */}
@@ -77,7 +77,7 @@ const Library = () => {
       </div>
       
       {/* Grid container for product cards */}
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 pb-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {products.map((product) => (
             <ProductCard key={product.id} product={product} />

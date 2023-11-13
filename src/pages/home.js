@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
+import { Link } from 'react-router-dom';
 import '../App.css';
 
 const Home = () => {
@@ -13,18 +14,20 @@ const Home = () => {
             <div class="w-full md:w-1/2 px-4 mt-12">
                 <div class="p-6">
                     <h1 class="text-3xl font-semibold mb-4 text-white">Need a new book?</h1>
-                    <p class="text-lg text-white">Browse other people's libraries at little to no cost to you!</p>
-                    <button class="bg-blue-400 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">Browse Libraries</button>
+                    <p class="text-lg text-white mb-2">Enjoy the benefits of swapping books with another people! Browse other people's libraries at little to no cost to you!</p>
+                    <Link to="/library" className="bg-blue-400 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4 inline-block no-underline">
+                      Browse Libraries
+                    </Link>
                 </div>
             </div>
-            <div class="w-full md:w-1/2 px-4 pl-20 mb-10">
+            <div class="w-full md:w-1/2 px-4 pl-20 mb-20">
                 <div class="p-6">
                     <img src="..\images\swap.png" alt="Book Image" class="rounded-lg shadow-xl"></img>
                 </div>
             </div>
             <div class="container mx-auto p-4">
               <h2 class="text-2xl font-semibold mb-6 pl-6 text-white">Browse your Favorite Genres</h2>
-              <div class="flex justify-around w-9/12 pl-20">
+              <div class="flex justify-around w-9/12 pl-10 pt-2">
 
                   <div class="flex flex-col items-center mb-20">
                       <button class="border text-white font-bold py-2 px-4 rounded">Sci-Fi</button>
