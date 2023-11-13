@@ -9,9 +9,10 @@ const Account = () => {
     <div>
       <Navbar />
       
-      {/* TODO: insert generic container with content here*/}
-      <h1>Welcome to the accounts page!</h1>
-      <p>This is our accounts page</p>
+      {/* Header Section */}
+      <div className="bg-gray-900 py-12 mb-6 text-center border border-slate-800 text-white">
+        <h1 className="text-4xl font-bold mb-3">Your Account Details</h1>
+      </div>
 
       <Footer />
     </div>

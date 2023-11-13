@@ -38,16 +38,16 @@ const Navbar = () => {
         <div className="hidden w-full md:block md:w-auto">
           <ul className="flex flex-col p-4 mt-4 bg-gray-900 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
             <li>
+              <Link to="/library" className="text-white hover:text-blue-600">Library</Link>
+            </li>
+            <li>
               <Link to="/about" className="text-white hover:text-blue-600">About</Link>
             </li>
             <li>
               <Link to="/account" className="text-white hover:text-blue-600">Account</Link>
             </li>
             <li>
-              <Link to="/library" className="text-white hover:text-blue-600">Library</Link>
-            </li>
-            <li>
-              <Link to="/messages" className="text-white hover:text-blue-600">Messages</Link>
+              <Link to="/notifications" className="text-white hover:text-blue-600">Notifications</Link>
             </li>
             {user && (
               <li className="md:ml-4 pl-80 text-white">

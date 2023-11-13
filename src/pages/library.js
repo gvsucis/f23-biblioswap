@@ -32,6 +32,34 @@ const products = [
     description: 'This is the description for product four.',
     price: '$49.99',
     imageUrl: 'https://via.placeholder.com/200x150'
+  },
+  {
+    id: 5,
+    title: 'Product One',
+    description: 'This is the description for product one.',
+    price: '$29.99',
+    imageUrl: 'https://via.placeholder.com/200x150'
+  },
+  {
+    id: 6,
+    title: 'Product Two',
+    description: 'This is the description for product two.',
+    price: '$19.99',
+    imageUrl: 'https://via.placeholder.com/200x150'
+  },
+  {
+    id: 7,
+    title: 'Product Three',
+    description: 'This is the description for product three.',
+    price: '$39.99',
+    imageUrl: 'https://via.placeholder.com/200x150'
+  },
+  {
+    id: 8,
+    title: 'Product Four',
+    description: 'This is the description for product four.',
+    price: '$49.99',
+    imageUrl: 'https://via.placeholder.com/200x150'
   }
 ];
 
