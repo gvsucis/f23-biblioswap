@@ -10,6 +10,7 @@ import About from './pages/about';
 import Library from './pages/library';
 import Account from './pages/account';
 import Notifications from './pages/notifications';
+import ContactUs from './pages/contactus';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/library" element={<Library />} />
         <Route path="/notifications" element={<Notifications />} />
         <Route path="/account" element={<Account />} />
+        <Route path="/contactus" element={<ContactUs />} />
       </Routes>
     </Router>
   );

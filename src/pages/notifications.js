@@ -6,9 +6,9 @@ import Footer from '../components/footer';
 const Notifications = () => {
   return (
 
-    <div class="bg-gray-800">
+    <div className="flex flex-col min-h-screen bg-slate-800"> {/* Flex container with minimum height */}
       <Navbar />
-
+      <div className="flex-grow">
       {/* Header Section */}
       <div className="bg-gray-900 py-12 mb-6 text-center border border-slate-800 text-white">
         <h1 className="text-4xl font-bold mb-3">View Your Notifications</h1>
@@ -42,8 +42,7 @@ const Notifications = () => {
 
       <Footer />
     </div>
-
-
+</div>
   );
 };
 

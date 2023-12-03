@@ -1,7 +1,22 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { onAuthStateChanged, getAuth } from 'firebase/auth';
+
 
 const Footer = () => {
+    const [showModal, setShowModal] = useState(false);
+    const [user, setUser] = useState(null); // This state holds the user data if logged in
+
+  useEffect(() => {
+    const auth = getAuth();
+    const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
+      setUser(currentUser); // Set user data on login
+    });
+
+    // Clean up subscription on unmount
+    return () => unsubscribe();
+  }, []);
+
 return (
     <footer class="bg-white shadow dark:bg-gray-900">
         <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
@@ -12,29 +27,38 @@ return (
                 </a>
                 <ul class="flex flex-wrap items-center mb-6 space-x-4 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
                     <li>
-                    <Link to="/about" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+                    <Link to="/about" className="block py-2 pl-3 pr-2 rounded text-white hover:text-blue-500 transition duration-300">
                         About
                     </Link>
                     </li>
                     <li>
-                    <Link to="/account" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
-                        Account
-                    </Link>
+                    {user && (
+                    <li>
+                        <Link to="/account" className="text-white hover:text-blue-500 transition duration-300">Add to the Library</Link>
+                    </li>
+                    )}
                     </li>
                     <li>
-                    <Link to="/library" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+                    <Link to="/library" className="block py-2 pl-3 pr-2 rounded text-white hover:text-blue-500 transition duration-300">
                         Library
                     </Link>
                     </li>
+                    {user && (
                     <li>
-                    <Link to="/notifications" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+                    <Link to="/notifications" className="block py-2 pl-3 pr-2 rounded text-white hover:text-blue-500 transition duration-300">
                         Notifications
+                    </Link>
+                    </li>
+                    )}
+                    <li>
+                    <Link to="/contactus" className="block py-2 pl-3 pr-2 rounded text-white hover:text-blue-500 transition duration-300">
+                        Contact Us
                     </Link>
                     </li>
                 </ul>
             </div>
             <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-            <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">Biblioswap™</a>  All Rights Reserved.</span>
+            <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="#0" class="hover:underline">Biblioswap™</a>  All Rights Reserved.</span>
         </div>
     </footer>
   );
