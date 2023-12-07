@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import { db } from '../firebase'; // Make sure this path is correct
 import { collection, addDoc } from 'firebase/firestore';
 import { ref, uploadBytesResumable, getDownloadURL } from 'firebase/storage';
-import { storage } from '../firebase'; // Import your storage reference
+import { deleteDoc, doc } from 'firebase/firestore';
+import { db, storage, auth } from '../firebase'; // Import the auth reference as well
+
 
 const CreateListing = () => {
   const [formData, setFormData] = useState({
@@ -58,10 +59,18 @@ const CreateListing = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     const imageUrl = await handleImageUpload(); // Upload the image first and get the URL
+    const user = auth.currentUser; // Use the auth object that you imported
+
+    if (!user) {
+      console.error("User must be logged in to create a listing");
+      return;
+    }
+
     try {
       await addDoc(collection(db, 'listings'), {
         ...formData,
         imageUrl, // Add the image URL to the document
+        ownerUid: user.uid // Store the owner's UID
       });
       // Clear form, reset file, give success message, etc.
       setFormData({ title: '', author: '', contactEmail: '', imageUrl: '', description: '' });
@@ -132,6 +141,7 @@ const CreateListing = () => {
         </div>
       </form>
     </div>
+    
   );
 };
 

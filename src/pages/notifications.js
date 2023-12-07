@@ -33,6 +33,24 @@ const Notifications = () => {
             <div className="flex justify-between items-center p-3 border border-gray-300 rounded-md">
               <span>Swap Item 4</span>
             </div>
+            <div className="flex justify-between items-center p-3 border border-gray-300 rounded-md">
+              <span>Swap Item 5</span>
+            </div>
+            <div className="flex justify-between items-center p-3 border border-gray-300 rounded-md">
+              <span>Swap Item 6</span>
+            </div>
+            <div className="flex justify-between items-center p-3 border border-gray-300 rounded-md">
+              <span>Swap Item 7</span>
+            </div>
+            <div className="flex justify-between items-center p-3 border border-gray-300 rounded-md">
+              <span>Swap Item 8</span>
+            </div>
+            <div className="flex justify-between items-center p-3 border border-gray-300 rounded-md">
+              <span>Swap Item 9</span>
+            </div>
+            <div className="flex justify-between items-center p-3 border border-gray-300 rounded-md">
+              <span>Swap Item 10</span>
+            </div>
           </div>
       </div>
       </div>
